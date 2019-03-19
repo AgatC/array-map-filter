@@ -41,11 +41,18 @@ En sortie: [
 ]
 
  */
+function getFoodCategories(array) {
+  const isVeggie = array.map(function (bool) {
+    if (bool.isVegetarian) {
+      return `${bool.food} is suitable for vegetarians`;
+    } else {
+      return `${bool.food} is not suitable for vegetarians`
+    }
+  });
 
-function getFoodCategories(foods) {
-}
+  return isVeggie;
 
-
+};
 
 // Ne pas modifier l'export
 module.exports = getFoodCategories;

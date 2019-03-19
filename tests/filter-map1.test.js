@@ -11,7 +11,7 @@ xdescribe('map + filter - exercice 1', () => {
       { name: 'Darth Sidious', side: 'dark' },
       { name: 'Darth Maul', side: 'dark' }
     ]))
-    .toEqual(['Yoda', 'Obiwan Kenobi', 'Mace Windu']);
+      .toEqual(['Yoda', 'Obiwan Kenobi', 'Mace Windu']);
   });
 
 });
