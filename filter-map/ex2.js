@@ -25,6 +25,16 @@ Sortie attendue:
 */
 
 function getCampusesTeachingReact(campuses) {
+  const jsCampus = campuses.filter(function (techno) {
+    const searchTerm = "JS/React";
+    return techno.curriculums.includes(searchTerm) === true;
+  })
+    .map(function (techno) {
+      return techno.city;
+    });
+
+  return jsCampus;
 }
+
 
 module.exports = getCampusesTeachingReact;
